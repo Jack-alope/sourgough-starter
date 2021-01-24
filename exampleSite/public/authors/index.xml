@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Your Name</title>
-    <link>http://sourgough.mrph.dev/authors/</link>
+    <link>https://sourgough.mrph.dev/authors/</link>
     <description>Recent content in Authors on Your Name</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://sourgough.mrph.dev/authors/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://sourgough.mrph.dev/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Author J One</title>
-      <link>http://sourgough.mrph.dev/authors/author-j-one/</link>
+      <link>https://sourgough.mrph.dev/authors/author-j-one/</link>
       <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://sourgough.mrph.dev/authors/author-j-one/</guid>
+      <guid>https://sourgough.mrph.dev/authors/author-j-one/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Author Number</title>
-      <link>http://sourgough.mrph.dev/authors/author-number/</link>
+      <link>https://sourgough.mrph.dev/authors/author-number/</link>
       <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://sourgough.mrph.dev/authors/author-number/</guid>
+      <guid>https://sourgough.mrph.dev/authors/author-number/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Beatle Juice</title>
-      <link>http://sourgough.mrph.dev/authors/beatle-juice/</link>
+      <link>https://sourgough.mrph.dev/authors/beatle-juice/</link>
       <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://sourgough.mrph.dev/authors/beatle-juice/</guid>
+      <guid>https://sourgough.mrph.dev/authors/beatle-juice/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Somebody Jones</title>
-      <link>http://sourgough.mrph.dev/authors/somebody-jones/</link>
+      <link>https://sourgough.mrph.dev/authors/somebody-jones/</link>
       <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://sourgough.mrph.dev/authors/somebody-jones/</guid>
+      <guid>https://sourgough.mrph.dev/authors/somebody-jones/</guid>
       <description></description>
     </item>
     
     <item>
       <title>This Writer</title>
-      <link>http://sourgough.mrph.dev/authors/this-writer/</link>
+      <link>https://sourgough.mrph.dev/authors/this-writer/</link>
       <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://sourgough.mrph.dev/authors/this-writer/</guid>
+      <guid>https://sourgough.mrph.dev/authors/this-writer/</guid>
       <description></description>
     </item>
     

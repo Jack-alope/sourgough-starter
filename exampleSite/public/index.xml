@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Your Name</title>
-    <link>http://sourgough.mrph.dev/</link>
+    <link>https://sourgough.mrph.dev/</link>
     <description>Recent content on Your Name</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 Jan 2021 21:51:40 +0000</lastBuildDate><atom:link href="http://sourgough.mrph.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Jan 2021 21:51:40 +0000</lastBuildDate><atom:link href="https://sourgough.mrph.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>http://sourgough.mrph.dev/about/bio/</link>
+      <link>https://sourgough.mrph.dev/about/bio/</link>
       <pubDate>Sat, 16 Jan 2021 21:51:40 +0000</pubDate>
       
-      <guid>http://sourgough.mrph.dev/about/bio/</guid>
+      <guid>https://sourgough.mrph.dev/about/bio/</guid>
       <description>This is where I would write an bio in order to introduce myself</description>
     </item>
     
     <item>
       <title>Education</title>
-      <link>http://sourgough.mrph.dev/about/education/</link>
+      <link>https://sourgough.mrph.dev/about/education/</link>
       <pubDate>Sat, 16 Jan 2021 21:51:40 +0000</pubDate>
       
-      <guid>http://sourgough.mrph.dev/about/education/</guid>
+      <guid>https://sourgough.mrph.dev/about/education/</guid>
       <description>   Some University  City, Place     Magister in Arte Ingeniaria (M.A.I) in Biomedical Engineering  Expected  2023   Baccalaureus in Arte Ingeniaria (B.A.I) in Biomedical Engineering  Expected  2023    </description>
     </item>
     
     <item>
       <title>Personal Website</title>
-      <link>http://sourgough.mrph.dev/projects/website/</link>
+      <link>https://sourgough.mrph.dev/projects/website/</link>
       <pubDate>Sat, 16 Jan 2021 21:51:40 +0000</pubDate>
       
-      <guid>http://sourgough.mrph.dev/projects/website/</guid>
+      <guid>https://sourgough.mrph.dev/projects/website/</guid>
       <description>This website has been created from scratch using Hugo as a static site generator. The source code is available on github and the custom theme sourgough-hugo is available for use under the MIT license.</description>
     </item>
     
     <item>
       <title>Some Project</title>
-      <link>http://sourgough.mrph.dev/projects/project/</link>
+      <link>https://sourgough.mrph.dev/projects/project/</link>
       <pubDate>Sat, 16 Jan 2021 21:51:40 +0000</pubDate>
       
-      <guid>http://sourgough.mrph.dev/projects/project/</guid>
+      <guid>https://sourgough.mrph.dev/projects/project/</guid>
       <description>Here is some more really cool information about this project. I even added an image. </description>
     </item>
     
     <item>
       <title>The title of my 2019 publication</title>
-      <link>http://sourgough.mrph.dev/publications/2019-pub-1/</link>
+      <link>https://sourgough.mrph.dev/publications/2019-pub-1/</link>
       <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://sourgough.mrph.dev/publications/2019-pub-1/</guid>
+      <guid>https://sourgough.mrph.dev/publications/2019-pub-1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The title of my abstract.</title>
-      <link>http://sourgough.mrph.dev/publications/2019-abstract/</link>
+      <link>https://sourgough.mrph.dev/publications/2019-abstract/</link>
       <pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://sourgough.mrph.dev/publications/2019-abstract/</guid>
+      <guid>https://sourgough.mrph.dev/publications/2019-abstract/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The title of my second publication</title>
-      <link>http://sourgough.mrph.dev/publications/2018-pub-2/</link>
+      <link>https://sourgough.mrph.dev/publications/2018-pub-2/</link>
       <pubDate>Fri, 16 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://sourgough.mrph.dev/publications/2018-pub-2/</guid>
+      <guid>https://sourgough.mrph.dev/publications/2018-pub-2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The title of my publication</title>
-      <link>http://sourgough.mrph.dev/publications/2018-pub-1/</link>
+      <link>https://sourgough.mrph.dev/publications/2018-pub-1/</link>
       <pubDate>Thu, 15 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://sourgough.mrph.dev/publications/2018-pub-1/</guid>
+      <guid>https://sourgough.mrph.dev/publications/2018-pub-1/</guid>
       <description></description>
     </item>
     
