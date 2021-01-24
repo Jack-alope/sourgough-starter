@@ -1,5 +1,5 @@
 title = "Your Name"
-baseURL = "http://example.org/"
+baseURL = "http://sourgough.mrph.dev/"
 languageCode = "en-us"
 theme = "sourgough-starter"
 relativeURLs = true
