@@ -1,0 +1,12 @@
+name = "sourgough-starter"
+license = "MIT"
+licenselink = "https://github.com/Jack-alope/sourgough-hugo/blob/main/LICENSE"
+description = "A hugo site template. Perfect for a PhD student or researcher to display projects and publications."
+homepage = "https://sourgough.mrph.dev/"
+tags = []
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = "Jack F. Murphy < jack@mrph.dev >"
+  homepage = "https://jack.engineering"

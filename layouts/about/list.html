@@ -1,0 +1,35 @@
+{{ define "main" }}
+<section class="blueish">
+{{ range .Pages }}
+
+<div class="container" id="about">
+    <h1>{{ .Title | markdownify }}</h1>
+    {{.Content}}
+    <hr/>
+</div>
+
+{{ end }}
+<div class="container" id="about">
+    {{ range .Site.Menus.bot }}
+        <a href="{{ .URL}}"title="{{.Title}}"> <i
+        class="{{.Pre}}"
+        data-toggle="tooltip" data-placement="top"
+        title="{{.Name}}"></i></a>
+    {{ end }}
+    {{ range .Site.Menus.about }}
+        <a href="{{ .URL}}"title="{{.Title}}"> <i
+        class="{{.Pre}}"
+        data-toggle="tooltip" data-placement="top"
+        title="{{.Name}}"></i></a>
+    {{ end }}
+</div>
+</section>
+<style>
+    .footer {
+        color: white;
+    }
+</style>
+{{ end }}
+
+
+

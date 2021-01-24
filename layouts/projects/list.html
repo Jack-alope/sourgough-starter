@@ -1,0 +1,50 @@
+{{ define "main" }}
+
+<div class="container" style="font-size:
+12px;text-align: center;" id="projects">
+    <div class="row">
+        
+    {{ range .Pages }}
+    <div class="col-lg-6" style="padding-top: 5%;">
+    <div class="card" style="margin: 5%; height: 80%">
+        <div class="card-body">
+          <h5 class="card-title">{{.Title}}</h5>
+          <p class="card-text">{{.Description}}</p>
+          <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="modal"
+            data-target=#{{ replace .Title " " ""}} style="margin: 5%;">
+                Read More
+            </button>
+          <a href="{{ .Params.Link }}" class="card-link">{{ .Params.linkTitle }}</a>
+        </div>
+      </div>
+  
+    <div class="modal fade" id={{replace .Title " " ""}} tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"
+                id="exampleModalLongTitle">{{.Title}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+             {{ .Content}}
+              
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">close</button>
+            {{ range $key, $value := .Params.projectLinks }}
+              <a role="button" class="btn
+              btn-outline-primary" href="{{$value}}" target="_blank">{{ $key }}</a>
+            {{ end }}
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+  {{end}}
+  </div>
+ </div>
+
+{{ end }}

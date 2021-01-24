@@ -1,0 +1,67 @@
+{{ define "main" }}
+<section class="blueish">
+<div class="container" id="about" >
+    {{ $year := 1}}
+    {{ range .Pages.ByDate.Reverse }}
+        {{ $pubYear := .Date.Format "2006" }}
+        {{ if ne $year $pubYear }}
+            <h5 class="year">{{ $pubYear }}</h5>
+            {{ $year = $pubYear }}
+        {{ end }}
+        <div class="row">
+                {{ if isset .Params "doi" }}
+                    {{ if isset .Params "link" }}
+                        <div class="col-auto">
+                            <a href="{{ .Params.link }}" target="_blank">{{.Title | markdownify}}</a> 
+                        </div>
+                    {{ else }}
+                        <div class="col-auto">
+                            <a href="https://doi.org/{{ .Params.doi}}" target="_blank">{{.Title | markdownify}}</a> 
+                        </div>
+                    {{ end }}
+
+                    <div class="col-auto" >
+                        <div style="background: white; border-radius: 10px;">
+                        <a href="https://plu.mx/plum/a/?doi={{.Params.doi }}" data-popup="right"
+                        data-size="tiny" class="plumx-plum-print-popup
+                        plum-bigben-theme" data-site="plum" data-hide-when-empty="true"></a>
+                        </div>
+                    </div>
+                {{ else }}
+                    {{ if isset .Params "type" }} [{{ .Params.type }}] {{ end }}
+                    <span>{{ .Title | markdownify }}</span>
+                {{end}}
+        </div>
+        <div>
+        {{ range (.GetTerms "authors") }}
+            {{ if eq .LinkTitle .Site.Title }} 
+                <b>{{ .LinkTitle }}</b> |
+            {{ else }}
+                {{ .LinkTitle }} |
+            {{ end }}
+        {{ end }}
+        <br>
+
+        <em>{{ .Params.Journal }} {{ $pubYear }}.</em>
+        {{ if isset .Params "pmid" }}
+            <span>
+                PMID: {{ .Params.PMID }}.
+                
+            </span>
+        {{ end }}
+        </div>
+        
+        
+        
+        <br><br>
+    {{end}}
+    
+</div>
+<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
+<style>
+    .footer {
+        color: white;
+    }
+</style>
+</section>
+{{ end }}

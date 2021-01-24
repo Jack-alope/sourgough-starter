@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-md navbar-light sticky-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <a class="navbar-brand" href="{{ "/" | relURL}}">{{.Site.Title}}</a>
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+          <li class="navbar-item {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}">
+            <a class="nav-link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-light navbar-expand fixed-bottom" style="background: #ffffff;height: 30px;">
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mx-auto"></ul>
+        <ul class="navbar-nav mr-auto">
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.link }}
+            <li class="navbar-item">
+                <a class="nav-link" href="{{ .URL}}"title="{{.Title}}"> {{.Name}}</a>
+            </li>
+            {{end}}
+            {{ range .Site.Menus.bot }}
+                <li class="navbar-item">
+                <a class="nav-link" href="{{ .URL}}"title="{{.Title}}"> <i
+                class="{{.Pre}}"
+                data-toggle="tooltip" data-placement="top"
+                title="{{.Name}}"></i></a>
+                </li>
+            {{ end }}
+        </ul>
+    </div>
+
+  </nav>
