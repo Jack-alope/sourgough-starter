@@ -1,0 +1,47 @@
+.footer {
+    position: fixed;
+    top: 140px;
+    right: -75px;
+    transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+  }
+
+.year {
+    position: relative;
+    left: -20px;
+}
+
+.container {
+    width: 70% !important;
+}
+
+.blueish {
+    background: rgba(47, 70, 97, 0.98) !important;
+    font-size: 13px;
+    color: white;
+    padding-top: 3%;
+    padding-bottom: 10%;
+}
+
+#about {
+    font-size: 12px;
+}
+#about a {
+    color: rgb(207, 207, 207);
+    text-decoration: none;
+}
+
+#about a:hover {
+    color: black;
+}
+
+#about i {
+    font-size: 15px !important;
+}
+
+#projects img {
+    width: 80%;
+}

@@ -1,6 +1,3 @@
-[module]
-  [[module.imports]]
-    path = "github.com/jack-alope/sourgough-starter"
 
 title = "Your Name"
 baseURL = "http://sourgough.mrph.dev/"
