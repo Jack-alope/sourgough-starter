@@ -2,10 +2,10 @@
 title: ""
 date: year-month-day
 type: 
-doi: ""
+doi: 
 PMID:
-link: ""
-journal: ""
+link: 
+journal: 
 authors: 
     - First
     - Second

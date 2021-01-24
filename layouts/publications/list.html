@@ -4,7 +4,10 @@
     {{ if .Site.Params.scholarStats}}
         <div style="text-align: right;">
             <span style="font-size: smaller;color: rgba(211, 211, 211, 0.6);">
-                [ Stats Updated Daily From Google Scholar ]
+                [ Stats Updated Daily From <a 
+                href="https://scholar.google.com/citations?user={{.Site.Params.googleScholar}}&hl=en"
+                target="_blank" style="color: rgba(211, 211, 211, .8);"> 
+                Google Scholar</a> ]
             </span> <br>
                 Citations: {{ .Site.Data.citation_stats.total }} | 
                 h-Index: {{ .Site.Data.citation_stats.h_index }} |
@@ -19,14 +22,14 @@
             {{ $year = $pubYear }}
         {{ end }}
         <div class="row">
-                {{ if isset .Params "doi" }}
-                    {{ if isset .Params "link" }}
+                {{ if isset .Params "link" }}
+                    {{ if isset .Params "doi" }}
                         <div class="col-auto">
-                            <a href="{{ .Params.link }}" target="_blank">{{.Title | markdownify}}</a> 
+                            <a href="https://doi.org/{{ .Params.doi}}" target="_blank">{{.Title | markdownify}}</a> 
                         </div>
                     {{ else }}
                         <div class="col-auto">
-                            <a href="https://doi.org/{{ .Params.doi}}" target="_blank">{{.Title | markdownify}}</a> 
+                            <a href="{{ .Params.link }}" target="_blank">{{.Title | markdownify}}</a> 
                         </div>
                     {{ end }}
 
