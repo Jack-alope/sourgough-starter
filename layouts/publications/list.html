@@ -1,6 +1,7 @@
 {{ define "main" }}
 <section class="blueish">
 <div class="container" id="about" >
+
     {{ if .Site.Params.scholarStats}}
         <div style="text-align: right;">
             <span style="font-size: smaller;color: rgba(211, 211, 211, 0.6);">
@@ -21,6 +22,9 @@
             <h5 class="year">{{ $pubYear }}</h5>
             {{ $year = $pubYear }}
         {{ end }}
+            {{ if isset .Params "type" }} 
+                <span style="position: relative;right: 12px;">[{{ .Params.type }}] </span>
+            {{ end }}
         <div class="row">
                 {{ if isset .Params "link" }}
                     {{ if isset .Params "doi" }}
@@ -41,7 +45,6 @@
                         </div>
                     </div>
                 {{ else }}
-                    {{ if isset .Params "type" }} [{{ .Params.type }}] {{ end }}
                     <span>{{ .Title | markdownify }}</span>
                 {{end}}
         </div>
