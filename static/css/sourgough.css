@@ -1,7 +1,7 @@
 .footer {
     position: fixed;
     top: 140px;
-    right: -75px;
+    right: {{.Site.Params.footerOffset}}px;
     transform: rotate(-90deg);
         -webkit-transform: rotate(-90deg);
         -moz-transform: rotate(-90deg);
