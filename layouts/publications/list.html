@@ -36,14 +36,15 @@
                             <a href="{{ .Params.link }}" target="_blank">{{.Title | markdownify}}</a> 
                         </div>
                     {{ end }}
-
-                    <div class="col-auto" >
-                        <div style="background: white; border-radius: 10px;">
-                        <a href="https://plu.mx/plum/a/?doi={{.Params.doi }}" data-popup="right"
-                        data-size="tiny" class="plumx-plum-print-popup
-                        plum-bigben-theme" data-site="plum" data-hide-when-empty="true"></a>
+                    {{ if .Site.Params.plumxStats }}
+                        <div class="col-auto" >
+                            <div style="background: white; border-radius: 10px;">
+                            <a href="https://plu.mx/plum/a/?doi={{.Params.doi }}" data-popup="right"
+                            data-size="tiny" class="plumx-plum-print-popup
+                            plum-bigben-theme" data-site="plum" data-hide-when-empty="true"></a>
+                            </div>
                         </div>
-                    </div>
+                    {{ end }}
                 {{ else }}
                     <span>{{ .Title | markdownify }}</span>
                 {{end}}
