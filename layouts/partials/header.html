@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light sticky-top">
+<nav id="navTop"class="navbar navbar-expand-md navbar-light sticky-top">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -16,19 +16,20 @@
     </div>
   </nav>
 
-  <nav class="navbar navbar-light navbar-expand fixed-bottom" style="background: #ffffff;height: 30px;">
+  <nav id="navBot" class="navbar navbar-light navbar-expand fixed-bottom" style="background: #ffffff;height: 30px;">
     <div class="collapse navbar-collapse">
         <ul class="navbar-nav mx-auto"></ul>
         <ul class="navbar-nav mr-auto">
             {{ $currentPage := . }}
             {{ range .Site.Menus.link }}
             <li class="navbar-item">
-                <a class="nav-link" href="{{ .URL}}"title="{{.Title}}"> {{.Name}}</a>
+                <a class="nav-link" href="{{ .URL }}"title="{{.Title}}" target="_blank"> {{.Name}}</a>
             </li>
             {{end}}
             {{ range .Site.Menus.bot }}
                 <li class="navbar-item">
-                <a class="nav-link" href="{{ .URL}}"title="{{.Title}}"> <i
+                <a class="nav-link" href="{{ .URL }}"title="{{.Title}}"
+                target="_blank"> <i
                 class="{{.Pre}}"
                 data-toggle="tooltip" data-placement="top"
                 title="{{.Name}}"></i></a>

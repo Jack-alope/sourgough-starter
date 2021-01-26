@@ -1,5 +1,25 @@
+:root { 
+    --primary-color: rgba(47, 70, 97, 0.98); 
+    --secondary-color: rgba(167, 112, 11); 
+} 
+
 .navbar {
     background: white;
+}
+
+#navBot a:hover, #navTop a:hover {
+    color: var(--primary-color);
+}
+
+.footer {
+    position: fixed;
+    top: 140px;
+    right: var(--footerOffset);
+    transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
 }
 
 .year {
@@ -7,35 +27,42 @@
     left: -20px;
 }
 
+.type {
+    position: relative;
+    left: -10px;
+}
+
 .container {
-    width: 70% !important;
+    width: 80% !important;
 }
 
 .blueish {
-    background: rgba(47, 70, 97, 0.98) !important;
-    font-size: 13px;
+    background: var(--primary-color) !important;
+    font-size: 14px;
     color: white;
     padding-top: 3%;
     padding-bottom: 10%;
 }
 
-#about {
-    font-size: 12px;
-}
-
-#about a {
+#about a, #publications a {
     color: rgb(207, 207, 207);
     text-decoration: none;
 }
 
-#about a:hover {
-    color: black;
+#about a:hover, #publications a:hover {
+    color: var(--secondary-color);
 }
 
 #about i {
-    font-size: 15px !important;
+    font-size: 25px !important;
+    color: var(--secondary-color);
 }
 
 #projects img {
     width: 80%;
+}
+
+#publications hr {
+    width: calc(100% + 20px);
+    margin:3 auto;
 }

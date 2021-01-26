@@ -1,5 +1,11 @@
 <head>
-    <title>{{ .Title }} | Jack F. Murphy</title>
+    <title>
+      {{ if ne .Title .Site.Title }}
+        {{ .Title }} | {{.Site.Title}}
+      {{ else }}
+        {{ .Title }}
+      {{ end }}
+    </title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,
