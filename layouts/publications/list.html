@@ -42,7 +42,7 @@
                 {{ if isset .Params "link" }}
                     {{ if isset .Params "doi" }}
                         <div class="col-auto">
-                            <a href="https://doi.org/{{ .Params.doi}}" target="_blank">{{.Title | markdownify}}</a> 
+                            <a href="{{ .Params.link }}" target="_blank">{{.Title | markdownify}}</a> 
                         </div>
                     {{ else }}
                         <div class="col-auto">
