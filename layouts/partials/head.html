@@ -1,15 +1,25 @@
 <head>
-    <title>
-      {{ if ne .Title .Site.Title }}
+    <title itemprop="name">
         {{ .Title }} | {{.Site.Title}}
-      {{ else }}
-        {{ .Title }}
-      {{ end }}
     </title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,
     initial-scale=1, shrink-to-fit=no">
+    <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
+    <meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
+    <meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
+    <meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
+    <meta property="og:site_name" content="{{ .Site.Title }}" />
+    <meta name="description" content="{{ .Params.description }}" />
+    <meta itemprop="description" content="{{ .Params.description }}" />
+    <meta property="og:description" content="{{ .Params.description }}" />
+    <meta name="twitter:description" content="{{ .Params.description}}" />
+    <base href="{{ .Permalink }}">
+    <link rel="canonical" href="{{ .Permalink }}" itemprop="url" /> 
+    <meta name="url" content="{{ .Permalink }}" />
+    <meta name="twitter:url" content="{{ .Permalink }}" /> 
+    <meta property="og:url" content="{{ .Permalink }}" />
     
     {{ range .Site.Params.css }} <link rel="stylesheet" href="{{ . | absURL }}"> {{end}}
 

@@ -43,4 +43,23 @@
   {{end}}
   </div>
  </div>
+ <section class="blueish">
+  <div class="container" id="about">
+    <div class="text-center" style="padding-top: 25px;">
+        {{ range .Site.Menus.bot }}
+            <a href="{{ .URL}}"title="{{.Title}}" target="blank"> <i
+            class="{{.Pre}}"
+            data-toggle="tooltip" data-placement="top"
+            title="{{.Name}}"></i></a>
+        {{ end }}
+        {{ range .Site.Menus.about }}
+            <a href="{{ .URL}}"title="{{.Title}}" target="_blank"> <i
+            class="{{.Pre}}"
+            data-toggle="tooltip" data-placement="top"
+            title="{{.Name}}"></i></a>
+        {{ end }}
+    </div>
+</div>
+ </section>
+
 {{ end }}

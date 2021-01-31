@@ -1,6 +1,6 @@
 {{ define "main" }}
 <section class="blueish">
-{{ range .Pages }}
+{{ range .Pages.ByDate.Reverse }}
     <div class="container" id="about">
         <div class="row justify-content-center align-items-center">
             {{ if eq .Title "About"}}
@@ -61,6 +61,16 @@
                         </a>
                     </div>
                 </div>
+            {{ end }}
+        </div>
+        <div class="row justify-content-center align-items-center">
+            {{ if ne .Title "Education"}}
+                {{ if ne .Title "About"}}
+                    <div class="col">
+                        <h1>{{ .Title | markdownify }}</h1>
+                        {{.Content}}
+                    </div>
+                {{ end }}
             {{ end }}
         </div>
         <hr/>

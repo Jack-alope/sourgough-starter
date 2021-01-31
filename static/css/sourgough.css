@@ -1,14 +1,11 @@
 :root { 
     --primary-color: rgba(47, 70, 97, 0.98); 
     --secondary-color: rgba(167, 112, 11); 
+    --link-color: rgb(207, 207, 207); 
 } 
 
 .navbar {
     background: white;
-}
-
-#navBot a:hover, #navTop a:hover {
-    color: var(--primary-color);
 }
 
 .footer {
@@ -32,10 +29,6 @@
     left: -10px;
 }
 
-.container {
-    width: 80% !important;
-}
-
 .blueish {
     background: var(--primary-color) !important;
     font-size: 14px;
@@ -44,8 +37,12 @@
     padding-bottom: 10%;
 }
 
+#navBot a:hover, #navTop a:hover {
+    color: var(--primary-color);
+}
+
 #about a, #publications a {
-    color: rgb(207, 207, 207);
+    color: var(--link-color);
     text-decoration: none;
 }
 
@@ -65,4 +62,11 @@
 #publications hr {
     width: calc(100% + 20px);
     margin:3 auto;
+}
+
+#research {
+    text-align: center;
+}
+#research img {
+    width: 50%;
 }

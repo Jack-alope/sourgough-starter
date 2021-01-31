@@ -1,20 +1,29 @@
 {{ define "main" }}
 <section class="blueish">
 <div class="container" id="publications" >
-
-    {{ if .Site.Params.scholarStats}}
-        <div style="text-align: right;">
-            <span style="font-size: smaller;color: rgba(211, 211, 211, 0.6);">
-                [ Stats Updated Daily From <a 
-                href="https://scholar.google.com/citations?user={{.Site.Params.googleScholar}}&hl=en"
-                target="_blank"> 
-                Google Scholar</a> ]
-            </span> <br>
-                Citations: {{ .Site.Data.citation_stats.total }} | 
-                h-Index: {{ .Site.Data.citation_stats.h_index }} |
-                i10-Index: {{ .Site.Data.citation_stats.i10_index }} 
+    <div class="row">
+        <div class="col" style="text-align: left;">
+            <span>Research areas: <br>
+                {{ range $key, $val := .Params.researchAreas }}
+                    <a class="text-capitalize" href="{{ $val }}">{{ $key }}</a>
+                {{ end }}
+               
+            </span>
         </div>
-    {{ end }}
+        {{ if .Site.Params.scholarStats}}
+            <div class="col" style="text-align: right;">
+                <span style="font-size: smaller;color: rgba(211, 211, 211, 0.6);">
+                    [ Stats Updated Daily From <a 
+                    href="https://scholar.google.com/citations?user={{.Site.Params.googleScholar}}&hl=en"
+                    target="_blank"> 
+                    Google Scholar</a> ]
+                </span> <br>
+                    Citations: {{ .Site.Data.citation_stats.total }} | 
+                    h-Index: {{ .Site.Data.citation_stats.h_index }} |
+                    i10-Index: {{ .Site.Data.citation_stats.i10_index }} 
+            </div>
+        {{ end }}
+    </div>
     {{ $year := 1}}
     {{ range .Pages.ByDate.Reverse }}
         
