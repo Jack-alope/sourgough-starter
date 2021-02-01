@@ -1,0 +1,18 @@
+image: registry.gitlab.com/pages/hugo:latest
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+pages:
+  script:
+    - apk add git
+    - mkdir themes
+    - cd themes
+    - git clone https://github.com/Jack-alope/sourgough-starter.git
+    - cd ..
+    - hugo
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
