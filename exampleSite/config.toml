@@ -1,7 +1,6 @@
-
-title = "Your Name"
-baseURL = "https://sourgough.mrph.dev/"
+baseURL = "https://sourgough.mrph.dev"
 languageCode = "en-us"
+title = "Your Name"
 theme = "sourgough-starter"
 relativeURLs = true
 
@@ -9,9 +8,14 @@ relativeURLs = true
     unsafe= true
 
 [params]
+#------------- Config -------------------
+    scholarStats = false #if true need a json with data. See https://gitlab.com/jack-alope/sourgough
+    plumxStats = true 
     backgroundPath = "images/SA_back.png"
-    css= ["css/sourgough.css"]
     footerOffset = -60
+
+#-------------- Defined ------------
+    css= ["css/sourgough.css"]
 
 [menu]
 #----- Navbar links ------
@@ -34,47 +38,58 @@ relativeURLs = true
   [[menu.bot]]
     identifier = "github"
     name = "Github"
-    url = "https://github.com/jack-alope/sourgough-hugo"
+    url = "https://github.com/jack-alope/"
     pre = "fab fa-github"
 
   [[menu.bot]]
-    identifier = "medium"
-    name = "Medium"
-    url = "/publications/"
-    pre = "fab fa-medium-m"
+    identifier = "gitlab"
+    name = "Gitlab"
+    url = "https://gitlab.com/jack-alope/"
+    pre = "fab fa-gitlab"
 
   [[menu.bot]]
     identifier = "linkedin"
     name = "LinkedIn"
-    url = "/projects/"
+    url = "https://www.linkedin.com/in/jackmurphyf/"
     pre = "fab fa-linkedin-in"
+
+  
 
 #-------- About section links ----- 
   [[menu.about]]
-    identifier = "a"
-    name = "Google Scholar"
-    url = "/projects/"
-    pre = "fas fa-graduation-cap"
+    identifier = "ordcidid"
+    name = "OrcidID"
+    url = ""
+    pre = "fab fa-orcid"
 
   [[menu.about]]
-    identifier = "b"
+    identifier = "researchgate"
+    name = "ResearchGate"
+    url = ""
+    pre = "fab fa-researchgate"
+
+  [[menu.about]]
+    identifier = "medium"
+    name = "Medium"
+    url = ""
+    pre = "fab fa-medium-m"
+
+  [[menu.about]]
+    identifier = "googlescholar"
     name = "Google Scholar"
-    url = "/projects/"
+    url = ""
     pre = "fas fa-graduation-cap"
 
 #----------- Text Links -------
   [[menu.link]]
     identifier = "email"
-    name = "jack@mrph.dev"
-    url = "/mailto"
+    name = "email@example.com"
+    url = "mailto:email@example.com"
 
   [[menu.link]]
     identifier = "resume"
     name = "resume"
-    url = "/resume/"
+    url = ""
 
 [taxonomies]
   authors = "authors"
-
-
-
