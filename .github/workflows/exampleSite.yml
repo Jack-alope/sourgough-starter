@@ -20,7 +20,7 @@ jobs:
     - name: Remove .git
       run: |
         rm -rf exampleSite/.git
-        sed ‘s/sed/sourgough.mrph.dev/example.com/’ file.txt
+        sed ‘s/sed/sourgough.mrph.dev/example.com/’ exampleSite/config.toml
         date >> exampleSite/README.md
     - name: Commit files
       run: |
