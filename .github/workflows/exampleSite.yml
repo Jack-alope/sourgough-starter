@@ -16,16 +16,17 @@ jobs:
     - name: Remove and Clone Example Site
       run: |
         rm -rf exampleSite
-        git clone https://gitlab.com/Jack-alope/sourgough-example.git exampleSite
+        git clone https://github.com/Jack-alope/sourgough-example.git exampleSite
     - name: Remove .git
       run: |
         rm -rf exampleSite/.git
+        rm -rf exampleSite/.github
         date >> exampleSite/README.md
     - name: Commit files
       run: |
         git config --local user.name "Github Action"
         git add .
-        git commit -m "updated indexraw"
+        git commit -m "Updated exampleSite"
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
