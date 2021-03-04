@@ -21,20 +21,17 @@
             <div class="modal-header">
                 <h5 class="modal-title"
                 id="exampleModalLongTitle">{{.Title}}</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
             </div>
             <div class="modal-body">
              {{ .Content}}
               
             </div>
             <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">close</button>
-            {{ range $key, $value := .Params.projectLinks }}
-              <a role="button" class="btn
-              btn-outline-primary" href="{{$value}}" target="_blank">{{ $key }}</a>
-            {{ end }}
+                {{ range $key, $value := .Params.projectLinks }}
+                  <a role="button" class="btn
+                  btn-outline-primary" href="{{$value}}" target="_blank">{{ $key }}</a>
+                {{ end }}
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">close</button>
             </div>
         </div>
         </div>
