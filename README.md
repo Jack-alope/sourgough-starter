@@ -120,7 +120,7 @@ relativeURLs = true
   authors = "authors"
 ```
 ###### Use
-Now you are ready to use this template. See this [example repo](https://gitlab.com/Jack-alope/sourgough-example) or my [personal repo](https://gitlab.com/Jack-alope/sourgough) to see it in use. 
+Now you are ready to use this template. See this [example repo](https://github.com/Jack-alope/sourgough-example) or my [personal repo](https://gitlab.com/Jack-alope/sourgough) to see it in use. 
 
 ## Built and Maintained By
 [Jack F. Murphy](https://jack.engineering)
