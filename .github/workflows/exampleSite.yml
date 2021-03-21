@@ -21,6 +21,7 @@ jobs:
       run: |
         rm -rf exampleSite/.git
         rm -rf exampleSite/.github
+        sed -i '1c\baseURL = "https://example.com"' exampleSite/config.toml
         date >> exampleSite/README.md
     - name: Commit files
       run: |
