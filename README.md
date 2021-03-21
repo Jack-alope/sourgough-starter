@@ -22,9 +22,9 @@ git clone https://github.com/Jack-alope/sourgough-starter.git
 ###### Edit `sitename/config.toml`
 Example config.toml
 ```toml
-baseURL = "https://jack.engineering"
+baseURL = "https://example.com"
 languageCode = "en-us"
-title = "Jack F. Murphy"
+title = "Your Name"
 theme = "sourgough-starter"
 relativeURLs = true
 
@@ -33,11 +33,10 @@ relativeURLs = true
 
 [params]
 #------------- Config -------------------
-    scholarStats = true
-    plumxStats = true
+    scholarStats = false #if true need a json with data. See https://github.com/jack-alope/sourgough-ipfs
+    plumxStats = true 
     backgroundPath = "images/SA_back.png"
-    googleScholar = 'RwMPs-8AAAAJ'
-    footerOffset = -75
+    footerOffset = -60
 
 #-------------- Defined ------------
     css= ["css/sourgough.css"]
@@ -84,37 +83,37 @@ relativeURLs = true
   [[menu.about]]
     identifier = "ordcidid"
     name = "OrcidID"
-    url = "https://orcid.org/0000-0002-0417-7298"
+    url = ""
     pre = "fab fa-orcid"
 
   [[menu.about]]
     identifier = "researchgate"
     name = "ResearchGate"
-    url = "https://www.researchgate.net/profile/Jack_Murphy20"
+    url = ""
     pre = "fab fa-researchgate"
 
   [[menu.about]]
     identifier = "medium"
     name = "Medium"
-    url = "https://medium.com/@jack.f.murphy"
+    url = ""
     pre = "fab fa-medium-m"
 
   [[menu.about]]
     identifier = "googlescholar"
     name = "Google Scholar"
-    url = "https://scholar.google.com/citations?user=RwMPs-8AAAAJ&hl=en"
+    url = ""
     pre = "fas fa-graduation-cap"
 
 #----------- Text Links -------
   [[menu.link]]
     identifier = "email"
-    name = "jack@mrph.dev"
-    url = "mailto:jack@mrph.dev"
+    name = "email@example.com"
+    url = "mailto:email@example.com"
 
   [[menu.link]]
     identifier = "resume"
     name = "resume"
-    url = "https://resume.jack.engineering"
+    url = ""
 
 [taxonomies]
   authors = "authors"
