@@ -1,4 +1,4 @@
-baseURL = "https://sourgough.mrph.dev"
+baseURL = "https://example.com"
 languageCode = "en-us"
 title = "Your Name"
 theme = "sourgough-starter"
@@ -9,7 +9,7 @@ relativeURLs = true
 
 [params]
 #------------- Config -------------------
-    scholarStats = false #if true need a json with data. See https://gitlab.com/jack-alope/sourgough
+    scholarStats = false #if true need a json with data. See https://github.com/jack-alope/sourgough-ipfs
     plumxStats = true 
     backgroundPath = "images/SA_back.png"
     footerOffset = -60
