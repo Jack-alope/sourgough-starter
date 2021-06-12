@@ -10,7 +10,7 @@ relativeURLs = true
 [params]
 #------------- Config -------------------
     scholarStats = false #if true need a json with data. See https://github.com/jack-alope/sourgough-ipfs
-    plumxStats = true 
+    dimensionCitations = true 
     backgroundPath = "images/SA_back.png"
     footerOffset = -60
 
