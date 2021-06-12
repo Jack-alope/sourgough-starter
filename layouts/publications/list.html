@@ -25,6 +25,14 @@
                     href="https://www.scopus.com/authid/detail.uri?authorId={{.Site.Params.scopusID}}"
                     target="_blank"> 
                     Scopus</a>
+                </span> <br>
+        {{ end }}
+        {{ if .Site.Params.dimensionsLink}}
+                <span style="font-size: smaller;color: rgba(211, 211, 211, 0.6);">
+                    <a 
+                    href="https://app.dimensions.ai/discover/publication?search_mode=content&and_facet_researcher={{.Site.Params.dimensionsID}}"
+                    target="_blank"> 
+                    Scopus</a>
                 </span>
         {{ end }}
         </div>
