@@ -11,7 +11,7 @@
             </span>
         </div>
         <div class="col" style="text-align: right;">
-        {{ if .Site.Params.scholarStats}}
+        {{ if .Site.Params.scholarLink}}
                 <span style="font-size: smaller;color: rgba(211, 211, 211, 0.6);">
                     <a 
                     href="https://scholar.google.com/citations?user={{.Site.Params.googleScholar}}&hl=en"
@@ -19,7 +19,7 @@
                     Google Scholar</a>
                 </span>
         {{ end }}
-        {{ if .Site.Params.scopusID}}
+        {{ if .Site.Params.scopusLink}}
                 <span style="font-size: smaller;color: rgba(211, 211, 211, 0.6);">
                     <a 
                     href="https://www.scopus.com/authid/detail.uri?authorId={{.Site.Params.scopusID}}"
