@@ -10,19 +10,24 @@
                
             </span>
         </div>
+        <div class="col" style="text-align: right;">
         {{ if .Site.Params.scholarStats}}
-            <div class="col" style="text-align: right;">
                 <span style="font-size: smaller;color: rgba(211, 211, 211, 0.6);">
-                    [ Stats Updated From <a 
+                    <a 
                     href="https://scholar.google.com/citations?user={{.Site.Params.googleScholar}}&hl=en"
                     target="_blank"> 
-                    Google Scholar</a> ]
-                </span> <br>
-                    Citations: {{ .Site.Data.citation_stats.total }} | 
-                    h-Index: {{ .Site.Data.citation_stats.h_index }} |
-                    i10-Index: {{ .Site.Data.citation_stats.i10_index }} 
-            </div>
+                    Google Scholar</a>
+                </span>
         {{ end }}
+        {{ if .Site.Params.scopusID}}
+                <span style="font-size: smaller;color: rgba(211, 211, 211, 0.6);">
+                    <a 
+                    href="https://www.scopus.com/authid/detail.uri?authorId={{.Site.Params.scopusID}}"
+                    target="_blank"> 
+                    Scopus</a>
+                </span>
+        {{ end }}
+        </div>
     </div>
     {{ $year := 1}}
     {{ range .Pages.ByDate.Reverse }}
