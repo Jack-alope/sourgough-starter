@@ -33,9 +33,14 @@ relativeURLs = true
 
 [params]
 #------------- Config -------------------
-    scholarStats = false #if true need a json with data. See https://github.com/jack-alope/sourgough-ipfs
-    plumxStats = true 
+    scholarLink = true
+    scopusLink = true
+    dimensionsLink = true
+    dimensionCitations = true
     backgroundPath = "images/SA_back.png"
+    googleScholar = 'XXXX' # These are needed only if set to true above
+    scopusID = 'XXXX'
+    dimensionsID = 'XXXX'
     footerOffset = -60
 
 #-------------- Defined ------------
