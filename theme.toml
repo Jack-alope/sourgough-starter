@@ -1,7 +1,7 @@
 name = "sourgough-starter"
 license = "MIT"
 licenselink = "https://github.com/Jack-alope/sourgough-starter/blob/main/LICENSE"
-description = "Perfect for a PhD student or researcher to display projects and publications. Citation counts on publications page automtically update based on DOI"
+description = "Perfect for a PhD student or researcher to display projects and publications. Citation counts on publications page automatically update based on DOI"
 
 homepage = "https://github.com/jack-alope/sourgough-starter/"
 demosite = "https://sourgough.mrph.dev/"
