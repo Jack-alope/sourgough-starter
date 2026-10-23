@@ -128,3 +128,8 @@ Now you are ready to use this template. See this [example repo](https://github.c
 
 ## Built and Maintained By
 [Jack F. Murphy](https://jack.engineering)
+
+## Live Demo & Sourdough Starter Calculator Note
+
+> **Note:** The original `https://sourgough.mrph.dev/` demo domain configured in the repository header has expired (`DNS NXDOMAIN`).
+> If you landed here searching for an interactive sourdough starter feeding & levain hydration calculator, you can use **[SourdoughCalc Starter Feeding Calculator](https://sourdoughcalc.app/starter-feeding-calculator)** (free, zero-login web utility).
